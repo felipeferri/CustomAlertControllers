@@ -12,6 +12,9 @@
 		554669D51FC63C6800B8ADC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 554669D31FC63C6800B8ADC6 /* Main.storyboard */; };
 		554669D71FC63C6800B8ADC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 554669D61FC63C6800B8ADC6 /* Assets.xcassets */; };
 		554669DA1FC63C6800B8ADC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 554669D81FC63C6800B8ADC6 /* LaunchScreen.storyboard */; };
+		554669E31FC63D4400B8ADC6 /* CustomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554669E11FC63D4400B8ADC6 /* CustomAlertViewController.swift */; };
+		554669E51FC63D4D00B8ADC6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554669E41FC63D4D00B8ADC6 /* Extensions.swift */; };
+		554669E81FC645FD00B8ADC6 /* CustomAlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 554669E21FC63D4400B8ADC6 /* CustomAlertViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		554669D61FC63C6800B8ADC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		554669D91FC63C6800B8ADC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		554669DB1FC63C6800B8ADC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		554669E11FC63D4400B8ADC6 /* CustomAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertViewController.swift; sourceTree = "<group>"; };
+		554669E21FC63D4400B8ADC6 /* CustomAlertViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomAlertViewController.xib; sourceTree = "<group>"; };
+		554669E41FC63D4D00B8ADC6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +60,12 @@
 		554669CE1FC63C6800B8ADC6 /* CustomAlertControllers */ = {
 			isa = PBXGroup;
 			children = (
+				554669E11FC63D4400B8ADC6 /* CustomAlertViewController.swift */,
+				554669E21FC63D4400B8ADC6 /* CustomAlertViewController.xib */,
+				554669E41FC63D4D00B8ADC6 /* Extensions.swift */,
+				554669D31FC63C6800B8ADC6 /* Main.storyboard */,
 				554669CF1FC63C6800B8ADC6 /* AppDelegate.swift */,
 				554669D11FC63C6800B8ADC6 /* ViewController.swift */,
-				554669D31FC63C6800B8ADC6 /* Main.storyboard */,
 				554669D61FC63C6800B8ADC6 /* Assets.xcassets */,
 				554669D81FC63C6800B8ADC6 /* LaunchScreen.storyboard */,
 				554669DB1FC63C6800B8ADC6 /* Info.plist */,
@@ -123,6 +132,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				554669E81FC645FD00B8ADC6 /* CustomAlertViewController.xib in Resources */,
 				554669DA1FC63C6800B8ADC6 /* LaunchScreen.storyboard in Resources */,
 				554669D71FC63C6800B8ADC6 /* Assets.xcassets in Resources */,
 				554669D51FC63C6800B8ADC6 /* Main.storyboard in Resources */,
@@ -137,7 +147,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				554669D21FC63C6800B8ADC6 /* ViewController.swift in Sources */,
+				554669E31FC63D4400B8ADC6 /* CustomAlertViewController.swift in Sources */,
 				554669D01FC63C6800B8ADC6 /* AppDelegate.swift in Sources */,
+				554669E51FC63D4D00B8ADC6 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +287,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RENG22TQ66;
+				DEVELOPMENT_TEAM = ZT28PLWG78;
 				INFOPLIST_FILE = CustomAlertControllers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sailscooter.CustomAlertControllers;
@@ -290,7 +302,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RENG22TQ66;
+				DEVELOPMENT_TEAM = ZT28PLWG78;
 				INFOPLIST_FILE = CustomAlertControllers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sailscooter.CustomAlertControllers;

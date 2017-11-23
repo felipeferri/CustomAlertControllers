@@ -10,16 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    @IBAction func firstAlertButtonTap(_ sender: UIButton) {
+        presentAlert(title: "Error", message: "This is an alert dialog with one button", leftTitle: nil, rightTitle: "Ok")
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func secondAlertButtonTap(_ sender: UIButton) {
+        presentAlert(title: "Error", message: "This is an alert dialog with two buttons", leftTitle: "Cancel", rightTitle: "Ok")
     }
-
-
+    
+    @IBAction func thirdAlertButtonTap(_ sender: UIButton) {
+        presentAlert(title: "Error", message: "This is an alert dialog with handler action", leftTitle: "Cancel", rightTitle: "Ok",
+                     leftAction: {
+            self.presentAlert(title: "Whoa", message: "You pressed the Cancel button", leftTitle: nil, rightTitle: "Ok")
+        }, rightAction: {
+            self.presentAlert(title: "Whoa", message: "You pressed the Ok button", leftTitle: nil, rightTitle: "Ok")
+        })
+    }
 }
 
